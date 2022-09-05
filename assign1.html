@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> JS assignment 1</h1>
+    <p> 1. Write a program to find whether a given year is a leap year or not.
+    </p>
+    <script>
+     // Write a program to find whether a given year is a leap year or not.
+     let leapYear = 2016;
+     if(leapYear % 100 === 0){
+       if(leapYear % 4 === 0){
+        console.log(`${leapYear} is leap year`);
+       } 
+     }else if(leapYear % 4 === 0){
+        console.log(`${leapYear} is leap year`);
+     } else{
+        console.log(`${leapYear} is not leap year`);
+     }  
+     //2.Write a JavaScript program to convert temperatures to and from Celsius,Fahrenheit.
+
+     let celcius = 60;
+     let fahr = 45 ;
+      function celciToFahr (celcius){
+        let fahrValue = celcius*1.8+32;
+       console.log(`Fahrenheit for ${celcius} is ${fahrValue}`)  
+      }
+      celciToFahr(60);
+      
+      function fahrToCelci(fahr){
+        let celciusValue = (fahr -32) *0.5556;
+      console.log(`Celsius for ${fahr} is ${celciusValue} `)
+      }
+      fahrToCelci(45);
+
+     //3. Write a program to find the factorial of a number
+     let facto = 3;
+     let multi=1;
+     for(let i=1;i<=facto;i++){
+       multi= multi*i
+     }
+     console.log(`factorial of ${facto} is ${multi}`)
+    </script>
+</body>
+</html>
